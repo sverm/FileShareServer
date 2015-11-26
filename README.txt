@@ -1,1 +1,1 @@
-A simeple python file sharing server.
+A simple python file sharing server.
