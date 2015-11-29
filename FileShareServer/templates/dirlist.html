@@ -1,5 +1,5 @@
 <html>
-{% for e in all_paths %}
-<a href="/{{e}}">{{e}}</a></br>
+{% for c in all_children %}
+<a href="/{{c.path }}">{{c.name}}</a></br>
 {% endfor %}
 <html>
