@@ -11,7 +11,7 @@ def home_test(path):
         return send_from_directory('/',pc.real_path[1:], as_attachment=True)
     elif pc.isdir:
         return render_template('dirlist.html', all_children=pc.get_dir_contents())
-    return pc.real_path, 200
+    return abort(400)
 
 if __name__ == "__main__":
     app.run(debug=True)
