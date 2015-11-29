@@ -2,4 +2,10 @@
 {% for c in all_children %}
 <a href="/{{c.path }}">{{c.name}}</a></br>
 {% endfor %}
+<p>
+<form action="" method=post enctype=multipart/form-data>
+    <input type=file name=file ><br>
+    <input type=submit value=Upload>
+</form>
+</p>
 <html>
